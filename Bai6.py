@@ -3,6 +3,10 @@ n = int(input('Bạn muốn list có bao nhiêu phần tử: '))
 a = int(input('Nhập giá trị đầu trong đoạn: '))
 b = int(input('Nhập giá trị cuối trong đoạn: '))
 c = int(input('Step: '))
+while a>=b:
+    print('Bạn nhập giá trị đầu lớn hơn giá trị cuối. Hãy nhập lại: ')
+    a = int(input('Nhập giá trị đầu trong đoạn: '))
+    b = int(input('Nhập giá trị cuối trong đoạn: '))
 list1 =[]
 list2 =[]
 if n<0:
