@@ -6,8 +6,8 @@ for index, x in enumerate(list2):
     print(index, '=>',x)
     for index, y in enumerate(x):
         print('  ',index,' ->',y )
-        print('     name:',index, y['name'])
-        print('     age:',index, y['age'])
+        print('     name:', y['name'])
+        print('     age:', y['age'])
         
         
 
