@@ -6,5 +6,4 @@ n = int(input('Nhập n: '))
 age = random.randrange(1,100)
 dictran = dict(Name = name(n), Age = age)
 print(dictran)
-print(dictran['Name'])
-print(dictran['Age'])
+
