@@ -1,3 +1,4 @@
+# Tạo 1 list gồm các số ngẫu nhiên rồi tìm giá trị lớn nhất trong list (Ko dùng hàm max)
 import random
 n = int(input('Bạn muốn list có bao nhiêu phần tử: '))
 a = int(input('Nhập giá trị đầu trong đoạn: '))
