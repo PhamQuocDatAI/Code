@@ -1,3 +1,4 @@
+# Tìm được giá trị nhỏ nhất, lớn nhất của list. 
 import random
 n = int(input('Số phần tử của list: '))
 list1 =[]
@@ -13,3 +14,4 @@ for x in list1:
     if min > x:
         min == x
 print('Giá trị nhỏ nhất là:',min)
+# Sắp xếp list

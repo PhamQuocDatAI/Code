@@ -6,4 +6,13 @@ import math
 for x in list:
     print('logarit cua x là:',math.log(x))
 
+# Phát triển
+import random 
+n = int(input('Nhập n: '))
+a = []
+b = []
+while n > 0:
+
+
+
 

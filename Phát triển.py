@@ -16,6 +16,7 @@ while a > 0:
 for x in Name2:
     print(x)
 # Xác định xem tên nào có ý nghĩa (Vd: John, Mary, Peter, Kalin,...)
+# English Dictionary.
 
 
 
