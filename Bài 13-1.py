@@ -10,6 +10,5 @@ for root, dirs, files in os.walk(path):
     list1.append(ten_tap_tin)
     ten_thu_muc = os.path.dirname(path)
     list2.append(ten_thu_muc)
-print(list1)
-print(list2)
-
+print('Tên tập tin là: ', list1)
+print('Tên thư mục là: ', list2)
