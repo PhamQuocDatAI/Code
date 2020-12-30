@@ -4,10 +4,10 @@ def randomstr():
     for i in range(1023999):
         name += random.choice(string.ascii_letters)
     return name
-path = 'C://Users//PC//Desktop//Bai 13-3' + '//'
+path = 'C://Users//PC//Desktop//Bai 13-3' 
 os.mkdir(path)
 os.chdir(path)
-#Dung lượng dữ liệu giới hạn:
+# Nhập dung lượng của folder
 size = float(input('Nhập dung lượng dữ liệu (1MB-1024MB):'))
 so_file_nguyen = size*1024//1000
 file_du = size * 1024 % 1000        
@@ -17,9 +17,9 @@ for i in range(int(so_file_nguyen)):
     f = open(f, mode= 'w')
     f.write(randomstr())
     f.close()
-#Tạo 1 file với số byte còn lại
+# Tạo 1 file với số byte còn lại
 if  file_du > 0:
-    f = 'file'+ str(n) +'.txt'
+    f = 'file'+ str(so_file_nguyen) +'.txt'
     f = open(f, mode= 'w')
     name = random.choice(string.ascii_letters)
 for i in range(file_du):
