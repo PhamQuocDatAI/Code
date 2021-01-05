@@ -62,10 +62,9 @@ print('Chuyển chuỗi a thành in thường:', a.lower())
 
 
 # Bài 6: Xuất ra màn hình 1 chuỗi ký tự nằm trên nhiều hàng
+
 import string
 print('''But you understand, understand when it hurts 
-         You sympathize, when my heart's 'bout to burst
-         I like you 'cause you're sad like me
-         I guess misery loves company''')
-
-
+You sympathize, when my heart's 'bout to burst
+I like you 'cause you're sad like me
+I guess misery loves company''')
