@@ -12,6 +12,5 @@
 
 import numpy as np
 import random
-n = int(input("Nhập giá trị n: "))
-A = np.random.randint(-10, 10, (4, 4))
-print(A)
+def matrix(n):
+    
