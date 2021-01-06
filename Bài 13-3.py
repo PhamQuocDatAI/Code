@@ -13,7 +13,7 @@ a = n * 1024 // 1000
 b = n * 1024 % 1000
 print('Số file là: ', a)
 # Giới hạn dung lượng file là 1000KB
-path = 'C://Users//PC//Desktop//Bai 13-3'
+path = 'C:\\Users\\DELL\\Desktop'
 while a > 0:
     # Tạo tập tin trong folder Bai 13-3
     ten_tap_tin = input('Nhập tên tập tin: ')
