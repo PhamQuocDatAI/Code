@@ -34,3 +34,4 @@ def luy_thua_matrix(n):
     return luy_thua_matrix
 
 print(luy_thua_matrix(n))
+print("Toán")

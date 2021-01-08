@@ -30,3 +30,7 @@ SO_PI = 3.14 # Hằng số phải đặt tên biến là chữ hoa
 SO_E  = 2.72
 bien  = 10   # Tên biến phải viết chữ thường
 
+# Quy tắc đặt tên file :
+    # 1/ Chỉ sử dụng các kí tự từ a-z
+    # 2/ Chỉ sử dụng từ 0-9
+    # 3/ Kí tự đăc biệt " - " đôi khi được phép dùng " _ "

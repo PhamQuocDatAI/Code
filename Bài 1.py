@@ -1,16 +1,20 @@
 # Bài 1: Nhập từ bàn phím 2 số nguyên và tính
+try:
+    a = int(input('Nhập số nguyên a = '))               # Rồi nhập kí tự thì xử sao? --> Thông báo lỗi 
+    b = int(input('Nhập số nguyên b = '))
+    print('Tổng hai số là: a + b =', a+b)
+    print('Tích hai số là: a * b =', a*b)
+    print('Hiệu hai số là: a - b =', a-b)
+    if b !=0:
+        print('Phần dư của a/b là: ', a%b)
+        print('Phần nguyên của a/b là: ', a//b)
+    else:
+        print('Không tìm được phần dư của a/b.')
+        print('Không tìm được phần nguyên của a/b')
+except  TypeError:
+    print('Sai kieu')
 
-a = int(input('Nhập số nguyên a = '))
-b = int(input('Nhập số nguyên b = '))
-print('Tổng hai số là: a + b =', a+b)
-print('Tích hai số là: a * b =', a*b)
-print('Hiệu hai số là: a - b =', a-b)
-if b !=0:
-    print('Phần dư của a/b là: ', a%b)
-    print('Phần nguyên của a/b là: ', a//b)
-else:
-    print('Không tìm được phần dư của a/b.')
-    print('Không tìm được phần nguyên của a/b')
+
 
 
 # Bài 2: Nhập từ bàn phím 2 số thực và tính
@@ -68,3 +72,4 @@ print('''But you understand, understand when it hurts
 You sympathize, when my heart's 'bout to burst
 I like you 'cause you're sad like me
 I guess misery loves company''')
+
