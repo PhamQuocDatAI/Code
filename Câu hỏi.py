@@ -5,8 +5,9 @@ def test(a, b):
     thuong = a/b
     return tong, hieu, tich, thuong
 
-a, b, c, d = test(14, 5)
-print(a)
+a, _, _, d = test(14, 5)
+print(a, d)
+
 
 # Phía trên có 4 giá trị, liệu có thể chỉ lấy 2 biến đầu, 2 biến giữa được không.
 # Làm sao có thể lấy 2 biến ngẫu nhiên.
