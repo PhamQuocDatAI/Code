@@ -1,4 +1,4 @@
-import re, requests, os
+import re, requests, os, codecs
 from bs4 import BeautifulSoup
 
 
@@ -24,7 +24,19 @@ def kiem_tra_link(item):
     result = re.match(regex, link) is not None
     return result
 
-max_page = 50
+# Hàm tạo thư mục
+def folder():
+    name = input("ten folder: ")
+    os.mkdir(name)
+    os.chdir(name)
+
+# Hàm lưu nội dung 
+def luu_file(url, stt):
+    f = codecs.open('file' + str(stt) + '.html', 'w', 'utf8')
+    f.write(requests.get(url).text)
+    f.close()
+
+max_page = int(input("Nhập số trang cần crawler: "))
 count = 0
 raw_link = []
 full_link = ["https://vietnamnet.vn"]
@@ -44,12 +56,15 @@ while (count < max_page) and (len(full_link) > 0):
             item = "https://vietnamnet.vn/" + item
             if not(item in full_link):  
                 full_link.append(item) 
-   # folder_op.luu_noi_dung_xuong_file(page, data_folder)
-   # history.append(url)
     count += 1
 
-# In ra màn hình các đường link 
-for index, z in enumerate(full_link):
+# In ra màn hình các đường link (có thể có hoặc không)
+for index, z in enumerate(full_link, 1):
     print(index,": ", z)
 
-# Lưu các đường link vào thư mục.
+folder()
+
+n = int(input("Số link muốn tải về máy: "))
+download_link = full_link[0:n]
+for index, x in enumerate(download_link):
+    luu_file(x, index)
