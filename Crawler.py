@@ -1,4 +1,4 @@
-import re, requests, os, codecs
+import re, requests, os, codecs, time
 from bs4 import BeautifulSoup
 
 
@@ -36,6 +36,7 @@ def luu_file(url, stt):
     f.write(requests.get(url).text)
     f.close()
 
+start_time = time.time()
 max_page = int(input("Nhập số trang cần crawler: "))
 count = 0
 raw_link = []
@@ -68,3 +69,6 @@ n = int(input("Số link muốn tải về máy: "))
 download_link = full_link[0:n]
 for index, x in enumerate(download_link):
     luu_file(x, index)
+
+
+print("--- %s seconds ---" % (time.time() - start_time))

@@ -20,5 +20,5 @@ print('Các số chẵn trong dãy là:',a[0:])
 # Thay đổi bước nhảy của For loop
 for k in range(10,20,2):
     print('Python')
-for m in range(10,20,3):
+for m in range(10,20,3):    
     print('Phương pháp 10k ^.^')
